@@ -2,9 +2,11 @@
 
 acumuladorSoma = 0
 cont = 0
+cont2 = 0
 for num in range (0,6):
   cont += 1
   valor = int(input(f'Digite o {cont}° valor: '))
   if valor%2==0:
+    cont2 += 1
     acumuladorSoma += valor
-print(f'Os valores pares dos números digitados é igual a {acumuladorSoma}.')
+print(f'Entre os {cont} valores informados, {cont2} números são pares e a soma destes é igual a {acumuladorSoma}.')
